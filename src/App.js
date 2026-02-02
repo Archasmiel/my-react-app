@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import TestQuestion from "./TestQuestion";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import TestQuestion from "./components/TestQuestion";
 
 export class App extends Component {
     render() {
@@ -12,7 +12,7 @@ export class App extends Component {
                     questionId={1}
                     questionText="which tag is used for styling"
                     answers={["h1", "style", "script", "input"]}
-                />;
+                />
             </main>
             <Footer />
         </>);
