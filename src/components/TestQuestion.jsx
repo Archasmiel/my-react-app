@@ -22,6 +22,26 @@ export class TestQuestion extends Component {
                     ))}
                 </ul>
                 <button className="btn btn-primary m-2">Submit</button>
+                <div className={styles.buttons}>
+                    <button
+                        className="btn btn-primary"
+                        onClick={() => this.props.previousQuestion()}
+                    >
+                        Previous
+                    </button>
+                    <button
+                        className="btn btn-primary"
+                        onClick={() => this.props.nextQuestion()}
+                    >
+                        Next
+                    </button>
+                </div>
+                <button
+                    className={"btn btn-secondary m-2 " + styles.stop}
+                    onClick={() => this.props.stopQuiz()}
+                >
+                    Stop Quiz
+                </button>
             </div>
         );
     }
